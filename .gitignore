@@ -1,0 +1,17 @@
+# macOS system files
+.DS_Store
+
+# Node modules (if you ever use npm/yarn)
+node_modules/
+
+# Logs
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+
+# Compressed files
+*.zip
+*.tar.gz 
