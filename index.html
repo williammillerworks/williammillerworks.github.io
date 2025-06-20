@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <title>William Miller</title>
+
+  <!-- SEO & Social Metadata -->
+  <meta name="description"
+    content="William Miller is a creative collective focused on building minimal, functional, and refined digital products." />
+  <meta name="author" content="William Miller" />
+  <meta name="keywords"
+    content="William Miller, product design, minimal software, Inter font, vibe coding, web design, creative collective" />
+
+  <!-- Open Graph (for Facebook, LinkedIn, etc) -->
+  <meta property="og:title" content="William Miller" />
+  <meta property="og:description" content="A creative collective building beautiful and useful digital products." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://williammillerworks.replit.app/" />
+  <meta property="og:image" content="https://williammillerworks.replit.app/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="William Miller" />
+  <meta name="twitter:description" content="A creative collective building beautiful and useful digital products." />
+  <meta name="twitter:image" content="https://williammillerworks.replit.app/og-image.png" />
+
+  <!-- Inter font full feature -->
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <style>
+    html {
+      font-family: 'Inter', sans-serif;
+      font-feature-settings: "cv11", "ss01";
+      background-color: #ffffff;
+      color: #000000;
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration-line: underline;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 4px;
+      text-decoration-color: #000000;
+      color: #000000;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.6;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="antialiased px-6 sm:px-12 py-12 relative min-h-screen flex flex-col justify-center">
+
+  <!-- Fixed Logotype -->
+  <div class="absolute top-6 left-6 text-sm tracking-tight font-medium select-none text-gray-400">
+    William Miller
+  </div>
+
+  <main class="max-w-2xl mx-auto space-y-12 text-left">
+    <!-- About Section -->
+    <section class="space-y-6 fade-in" id="about">
+      <h1 class="text-3xl font-bold tracking-tight">About</h1>
+      <p>We are a creative collective focused on building products that are both functional and refined. Our work is
+        grounded in the belief that well-designed software should be intuitive, aesthetically disciplined, and
+        meaningfully useful.</p>
+      <p>We approach design as a system — considering not only how it looks, but how it works, how it communicates, and
+        how it fits into the lives of its users. Our current focus is translating that design discipline into code:
+        building small-scale web products with a high standard of clarity, usability, and craft.
+      <p>We shape our work through a method called vibe coding — an intuitive, creative approach to
+        development. Instead of rigid specs and long cycles, we prototype quickly, iterate freely, and stay in the zone.
+      </p>
+      <p>We remain open to better ideas at any point in the journey. If you have thoughts or suggestions, feel free to
+        reach out — our
+        <a href="mailto:william.miller.works@gmail.com"
+          class="underline decoration-[1px] underline-offset-4 text-black">inbox</a> is always open.
+      </p>
+
+
+
+      <p class="text-sm text-gray-400">Edited in June 6, 2025</p>
+    </section>
+  </main>
+
+  <script>
+    // Basic scroll-triggered fade-in effect
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {threshold: 0.3}
+    );
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+
+</html>
