@@ -1,0 +1,75 @@
+/* design-tokens.css */
+
+:root {
+  /* Font */
+  --font-family-base: 'Inter', sans-serif;
+
+  /* Font Sizes */
+  --font-size-quote: 24px;
+  --line-height-quote: 36px;
+
+  --font-size-sub: 14px;
+  --line-height-sub: 18px;
+
+  --font-size-small: 12px;
+  --line-height-small: 16px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  /* Colors */
+  --color-bg: #FAF9F6;
+  --color-bg-button: #F5F3F0;
+  --color-bg-hover: #EBE9E5;
+
+  --color-text: #111111;
+  --color-text-secondary: #999999;
+  --color-text-link: #8F8F8F;
+  --color-text-link-hover: #797777;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  /* Shadows (optional) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* Example usage */
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+}
+
+.quote {
+  font-size: var(--font-size-quote);
+  line-height: var(--line-height-quote);
+}
+
+.subtext {
+  font-size: var(--font-size-sub);
+  line-height: var(--line-height-sub);
+  color: var(--color-text-secondary);
+}
+
+.button {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  background-color: var(--color-bg-button);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm) var(--space-md);
+}
+
+.button:hover {
+  background-color: var(--color-bg-hover);
+}
