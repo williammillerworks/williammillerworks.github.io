@@ -33,53 +33,16 @@
 
   <!-- Inter font full feature -->
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  <style>
-    html {
-      font-family: 'Inter', sans-serif;
-      font-feature-settings: "cv11", "ss01";
-      background-color: #ffffff;
-      color: #000000;
-      overflow-x: hidden;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    a {
-      text-decoration-line: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 4px;
-      text-decoration-color: #000000;
-      color: #000000;
-      transition: opacity 0.2s ease;
-    }
-
-    a:hover {
-      opacity: 0.6;
-    }
-
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: none;
-    }
-  </style>
+  <link rel="stylesheet" href="design-tokens.css">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="antialiased px-6 sm:px-12 py-12 relative min-h-screen flex flex-col justify-center">
 
   <!-- Fixed Logotype -->
-  <div class="absolute top-6 left-6 text-sm tracking-tight font-medium select-none text-gray-400">
-    William Miller
-  </div>
+  <header class="absolute top-6 left-6 text-sm tracking-tight font-medium select-none" aria-label="Site logotype">
+    <span style="color: var(--color-text-secondary);">William Miller</span>
+  </header>
 
   <main class="max-w-2xl mx-auto space-y-12 text-left">
     <!-- About Section -->
@@ -97,12 +60,9 @@
       <p>We remain open to better ideas at any point in the journey. If you have thoughts or suggestions, feel free to
         reach out — our
         <a href="mailto:william.miller.works@gmail.com"
-          class="underline decoration-[1px] underline-offset-4 text-black">inbox</a> is always open.
+          class="underline decoration-[1px] underline-offset-4">inbox</a> is always open.
       </p>
-
-
-
-      <p class="text-sm text-gray-400">Edited in June 6, 2025</p>
+      <p class="about-date">Edited on June 6, 2025</p>
     </section>
   </main>
 
