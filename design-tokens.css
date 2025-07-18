@@ -43,38 +43,6 @@
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.06);
 }
 
-/* Example usage */
-body {
-  font-family: var(--font-family-base);
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-weight: var(--font-weight-medium);
-}
-
-.quote {
-  font-size: var(--font-size-quote);
-  line-height: var(--line-height-quote);
-}
-
-.subtext {
-  font-size: var(--font-size-sub);
-  line-height: var(--line-height-sub);
-  color: var(--color-text-secondary);
-}
-
-.button {
-  font-size: var(--font-size-small);
-  line-height: var(--line-height-small);
-  background-color: var(--color-bg-button);
-  border-radius: var(--radius-sm);
-  padding: var(--space-sm) var(--space-md);
-}
-
-.button:hover {
-  background-color: var(--color-bg-hover);
-}
-
-/* Custom styles moved from index.html */
 html {
   font-family: var(--font-family-base);
   font-feature-settings: "cv11", "ss01";
